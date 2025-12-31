@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+        background-color: #F3E8DF;
+    }
+    p {
+        font-size: 20px;
+    color: #b16565;
+    font-family: 'Cinzel', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);        
+   line-height: 1.6;
+    }
+    h2{
+        color:#FF5722;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+    }
+ ul {
+  display:flex;
+  flex-direction: column;
+    color:gold;
+    font-size: 40px;
+    list-style-type: none;
+    background-color: #1E293B;
+    padding: 15px;
+    border-radius: 0 16px 16px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.aboutme {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+h1 {
+    color:#FF5722;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.aboutme img {
+ align-self: center;
+    width: 200px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.aboutme p {
+    font-size: 20px;
+    color:  #b16565;
+    font-family: 'Cinzel', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+   line-height: 1.6; 
+}
+.container {
+    padding: 50px 20px;
+    background-color: #0F172A;
+    color: #F8FAFC;
+    text-align: center;
+}
+.skills-flex {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
+.skill-item i {
+    font-size: 3rem;
+}
+.skill-item {
+    background-color: #1E293B;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #5c3de9;
+    transition: transform 0.3s ease; 
+}
+.skill-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+h3 {
+    color:#FF5722;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+ .navbutton {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius:8px ;
+    background-color: #6366f1;
+    color: white;
+    text-decoration: none;
+    transition:all 0.3s ease;
+    cursor:pointer;
+    box-shadow: 0 4px 6px rgba(99, 102, 241, 0.3);
+ }
+ .navbutton:hover {
+    background-color: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+ }
+ .navbutton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(99, 102,241,0.3);
+ }
+ nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin:20px;
+   position:sticky;
+   z-index: 1000;
+   background-color: #FFFFFF;
+   border-radius: 50px;
+   padding: 12px 24px;
+   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+   gap:15px;
+ }
+    footer {
+        background-color: #1E293B;
+        color: #F8FAFC;
+        text-align: center;
+        border-radius:8px;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    .social-icons a {
+        color: #F8FAFC;
+        margin:0 10px;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+        color: #FF5722;
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(255, 87, 34, 0.3);
+    }
+    .social-icons{
+        margin: bottom 10px;
+    }
+    
+ @media (max-width: 768px) {
+    /* Your mobile styles here */
+    h1 {
+        font-size: 30px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .skills-flex {
+        grid-template-columns: 1fr;
+}
+ }
+  </style>
+</head>
+         <body>
+            <nav>
+                <a href="https://codewithmosh.com/" class="navbutton" target="_blank"> My mentor</a>
+            <a href="#about" class="navbutton"> About me</a>
+            <a href="#myskills" class="navbutton"> My Skills</a>
+            <a href="#contactme" class="navbutton"> Contact Me</a>
+            <a href="#projects" class="navbutton">Projects</a>
+            </nav>
+            <h1>About Me</h1>
+            <section class="aboutme" id="about">
+           <i class="fa-solid fa-user-circle" style="font-size:120px;"></i>
+        <p>Hello! I'm  Adinde Emmanuel, a passionate web developer and designer. I love creating beautiful and functional websites that provide great user experiences. In my free time, I enjoy exploring new technologies and enhancing my skills.</p>
+        </section>
+       <section class="container" id="myskills">
+      <h2> My Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Responsive Design</li>
+            <li>Flexbox Layouts</li>
+            </ul>
+            <div class="skills-flex">
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+            <h2>Frontend Development</h2>
+            <p> I Build Responsive, fast-loading websites using HTML, CSS, and JavaScript Frameworks.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-palette"></i>
+           <h3>Flexbox & CSS Grid</h3>
+              <p> I Create Responsive Layouts using Flexbox and CSS Grid for modern web design.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h3>Web Performance Optimization</h3>
+                <p> I Optimize Website Performance by minimizing load times and improving overall user experience through best practices and efficient coding techniques.</p>
+                </div>
+                </div>
+       </section>
+        <section id="projects" class="container">
+                  <h2>My Projects</h2>
+                  <div class="skills-flex">
+                 <div class="skill-item">
+              <h3>Gym Website</h3>
+<p>Responsive fitness website built with HTML & CSS.</p>
+              <a href="gym.html" class="navbutton" target="_blank">View project</a>
+
+
+
+
+
+                 </div>
+
+
+
+
+                  </div>
+
+
+        </section>
+       <section id="contactme">
+        <h3>Contact Me 😊😊</h3>
+        <p>If you'd like to get in touch, feel free to reach out via email at
+     adindeemmanuel42@gmail.com or <a href="mailto:adindeemmanuel42@gmail.com" target="_blank">Click Here </a>
+       </section>
+         <footer class="footer">
+        <p>&copy; 2024 Adinde Emmanuel. All rights reserved.</p>
+        <div class="social-icons">
+        <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/adindeemmanuel42-lgtm/adindeemmanuel42-lgtm.github.io" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+          
+
+              
+
+         </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
